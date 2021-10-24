@@ -88,3 +88,27 @@ html {
 .hidden {
   display: none;
 }
+
+#ten, #ten2, #unten, #unten2 {
+  font-size: 15px;
+  padding: 10px 6px;
+  background-color: black;
+  color: silver;
+  border: 1px solid silver;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#ten:hover, #ten2:hover, #unten:hover, #unten2:hover {
+  opacity: 0.7
+}
+
+#ten:active, #ten2:active, #unten:active, #unten2:active {
+  opacity: 0.5
+}
+
+.add_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
