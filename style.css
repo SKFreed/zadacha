@@ -1,0 +1,53 @@
+body
+{
+    background-image: url("/image/mountain_bg.jpg");
+    background-attachment: fixed;
+}
+th
+{
+    cursor: pointer;
+}
+table
+{
+    border-collapse: collapse;
+    border-radius: 20px !important;
+}
+.tab
+{
+    width: 40%;
+}
+td
+{
+    height: 30px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.up_button
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+button
+{
+    margin: 5px !important;
+    position: relative;
+
+}
+.btn-outline-secondary:hover
+{
+    background-color: #0fa3b9 !important;
+    border-color: #0fa3b9 !important;
+
+}
+.table-dark td,
+.table-dark th
+{
+    border-color: #0fa3b9 !important;
+}
+.config
+{
+    margin-top: 10px;
+    margin-left: 10%;
+}
