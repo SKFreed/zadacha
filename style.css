@@ -1,53 +1,90 @@
-body
-{
-    background-image: url("/image/mountain_bg.jpg");
-    background-attachment: fixed;
-}
-th
-{
-    cursor: pointer;
-}
-table
-{
-    border-collapse: collapse;
-    border-radius: 20px !important;
-}
-.tab
-{
-    width: 40%;
-}
-td
-{
-    height: 30px;
-    text-align: center;
-    overflow: scroll;
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-.up_button
-{
-    display: flex;
-    justify-content: space-between;
+.page {
+  margin: 0;
+  background-image: url(img/black-fone.jpg);
+}
 
+.table-section {
+  margin-top: 30px;
 }
-button
-{
-    margin: 5px !important;
-    position: relative;
 
+.table {
+  border-spacing: 0px 10px;
+  margin: 0 auto;
 }
-.btn-outline-secondary:hover
-{
-    background-color: #0fa3b9 !important;
-    border-color: #0fa3b9 !important;
 
+.table__head {
+  position: sticky;
+  top: 3px;
+  z-index: 1000;
+  background-color: black;
+  box-shadow: 0px 0px 4px 2px gray;
 }
-.table-dark td,
-.table-dark th
-{
-    border-color: #0fa3b9 !important;
+
+.table__title {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  color: silver;
+  padding: 18px 2px;
 }
-.config
-{
-    margin-top: 10px;
-    margin-left: 10%;
+
+.table__row {
+  text-align: center;
+  box-shadow: 0px 0px 4px 2px indigo;
+}
+
+.table__cell {
+  min-width: 150px;
+  max-width: 180px;
+  padding: 10px 5px;
+  background-color: black;
+  color: silver;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.table__cell:hover {
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 4px 2px floralwhite;
+}
+
+.table__cell--active {
+  box-shadow: inset 0px 0px 4px 2px floralwhite;
+}
+
+.name {
+  height: 18px;
+  overflow: hidden;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 24px;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 5px solid silver;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.btn-up:hover {
+  opacity: 0.7;
+}
+
+.btn-up:active {
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
 }
